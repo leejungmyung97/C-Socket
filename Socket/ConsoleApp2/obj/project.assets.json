@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jungm\\Documents\\C-Socket\\Socket\\ConsoleApp2\\ConsoleApp2.csproj",
-      "projectName": "ConsoleApp2",
-      "projectPath": "C:\\Users\\jungm\\Documents\\C-Socket\\Socket\\ConsoleApp2\\ConsoleApp2.csproj",
+      "projectUniqueName": "C:\\Users\\jungm\\Documents\\C-Socket\\Socket\\ConsoleApp2\\Serialize.csproj",
+      "projectName": "Serialize",
+      "projectPath": "C:\\Users\\jungm\\Documents\\C-Socket\\Socket\\ConsoleApp2\\Serialize.csproj",
       "packagesPath": "C:\\Users\\jungm\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jungm\\Documents\\C-Socket\\Socket\\ConsoleApp2\\obj\\",
       "projectStyle": "PackageReference",

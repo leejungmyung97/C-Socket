@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{B266EAD3-253B-4196-9B78-4EC8DF435DFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{F80BCB3F-5F48-44D2-9CF9-18F5B1DFA043}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialize", "ConsoleApp2\Serialize.csproj", "{EF41371B-019D-4541-A817-9DCC7C0A057C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F80BCB3F-5F48-44D2-9CF9-18F5B1DFA043}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F80BCB3F-5F48-44D2-9CF9-18F5B1DFA043}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F80BCB3F-5F48-44D2-9CF9-18F5B1DFA043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF41371B-019D-4541-A817-9DCC7C0A057C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF41371B-019D-4541-A817-9DCC7C0A057C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF41371B-019D-4541-A817-9DCC7C0A057C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF41371B-019D-4541-A817-9DCC7C0A057C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

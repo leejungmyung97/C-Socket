@@ -1,0 +1,15 @@
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\bin\Debug\net8.0\Client.exe
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\bin\Debug\net8.0\Client.deps.json
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\bin\Debug\net8.0\Client.runtimeconfig.json
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\bin\Debug\net8.0\Client.dll
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\bin\Debug\net8.0\Client.pdb
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\Client.AssemblyInfoInputs.cache
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\Client.AssemblyInfo.cs
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\Client.csproj.CoreCompileInputs.cache
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\Client.sourcelink.json
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\Client.dll
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\refint\Client.dll
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\Client.pdb
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\Client.genruntimeconfig.cache
+C:\Users\jungm\Documents\C-Socket\EcoSocket\TCPIP\Client\obj\Debug\net8.0\ref\Client.dll

@@ -3,11 +3,7 @@
     "Name": "새 프로필",
     "Projects": [
       {
-        "Path": "Server\\Server.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "Client\\Client.csproj",
+        "Path": "ConsoleApp2\\Serialize.csproj",
         "Action": "Start"
       }
     ]
