@@ -10,7 +10,7 @@ internal class Program
     {
         Socket serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse("192.168.123.100"), 20000);
-        
+
         // 서버소켓에 ip, port 할당
         serverSocket.Bind(endPoint);
 
@@ -18,10 +18,27 @@ internal class Program
         // 백로그큐 = 클라이언트들의 연결 요청 대기실
         serverSocket.Listen(20);
 
-        // 연결 요청을 수락
-        // 클라이언트와 데이터 통신을 위해 소켓 생성
-        Socket ClienSocket = serverSocket.Accept();
+        while (true)
+        {
+            // 연결 요청을 수락
+            // 클라이언트와 데이터 통신을 위해 소켓 생성
+            Socket ClienSocket = serverSocket.Accept();
+            Console.WriteLine("연결됨" + ClienSocket.RemoteEndPoint);
 
-        Console.WriteLine("연결됨" + ClienSocket.RemoteEndPoint);
+            Thread t1 = new Thread(() =>
+            {
+                while (true)
+                {
+                    byte[] buffer = new byte[256];
+                    int n1 = ClienSocket.Receive(buffer);
+                    if (n1 < 1)
+                    {
+                        ClienSocket.Dispose();
+                        break;
+                    }
+                }
+            });
+            t1.Start();
+        }
     }
 }
