@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using Core;
+using System.Net;
 using System.Net.Sockets;
 
 namespace Server;
@@ -56,6 +57,17 @@ internal class Server
                 totalRecv += n2;
             }
             #endregion
+
+            PacketType packetType = (PacketType)IPAddress.NetworkToHostOrder(BitConverter.ToInt16(dataBuffer));
+            if (packetType == PacketType.LoginRequest)
+            {
+                LoginRequestPacket packet = new LoginRequestPacket(dataBuffer);
+                Console.WriteLine($"id:{packet.Id} nickname:{packet.Nickname}");
+
+                // 200 = 응답성공
+                LoginResponsePacket packet2 = new LoginResponsePacket(200);
+                await clientSocket.SendAsync(packet2.Serialize(), SocketFlags.None);
+            }
         }
     }
 }

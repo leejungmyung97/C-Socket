@@ -1,3 +1,5 @@
+using Core;
+
 namespace Client;
 
 public partial class LoginForm : Form
@@ -5,9 +7,14 @@ public partial class LoginForm : Form
     public LoginForm()
     {
         InitializeComponent();
+        Singleton.Instance.LoginResponsed += LoginResponsed;
+        FormClosing += (s, e) =>
+        {
+            Singleton.Instance.LoginResponsed -= LoginResponsed;
+        };
     }
 
-    private void btn_login_Click(object sender, EventArgs e)
+    private async void btn_login_Click(object sender, EventArgs e)
     {
         if (string.IsNullOrEmpty(tbx_id.Text) || string.IsNullOrEmpty(tbx_nickname.Text))
         {
@@ -15,12 +22,27 @@ public partial class LoginForm : Form
             return;
         }
 
-        await Singleton.Instance.LoginAsync();
+        await Singleton.Instance.ConnectAsync();
+        LoginRequestPacket packet = new LoginRequestPacket(tbx_id.Text, tbx_nickname.Text);
+        await Singleton.Instance.Socket.SendAsync(packet.Serialize(), System.Net.Sockets.SocketFlags.None);
 
-        Singleton.Instance.Id = tbx_id.Text;
-        Singleton.Instance.Nickname = tbx_nickname.Text;
-                
-        RoomList roomList = new RoomList();
-        roomList.ShowDialog();
+    }
+
+    private void LoginResponsed(object? sender, EventArgs e)
+    {
+        LoginResponsePacket packet = (LoginResponsePacket)sender!;
+        MessageBox.Show(packet.Code.ToString());
+        if (packet.Code == 200)
+        {
+            Singleton.Instance.Id = tbx_id.Text;
+            Singleton.Instance.Nickname = tbx_nickname.Text;
+
+            RoomList roomList = new RoomList();
+            roomList.ShowDialog();
+        }
+        else
+        {
+            Singleton.Instance.Socket.Shutdown(System.Net.Sockets.SocketShutdown.Send);
+        }
     }
 }

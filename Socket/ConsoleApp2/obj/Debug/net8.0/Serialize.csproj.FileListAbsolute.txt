@@ -1,0 +1,15 @@
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\bin\Debug\net8.0\Serialize.exe
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\bin\Debug\net8.0\Serialize.deps.json
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\bin\Debug\net8.0\Serialize.runtimeconfig.json
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\bin\Debug\net8.0\Serialize.dll
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\bin\Debug\net8.0\Serialize.pdb
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\Serialize.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\Serialize.AssemblyInfoInputs.cache
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\Serialize.AssemblyInfo.cs
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\Serialize.csproj.CoreCompileInputs.cache
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\Serialize.sourcelink.json
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\Serialize.dll
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\refint\Serialize.dll
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\Serialize.pdb
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\Serialize.genruntimeconfig.cache
+C:\Users\jungm\Documents\C-Socket\Socket\ConsoleApp2\obj\Debug\net8.0\ref\Serialize.dll
