@@ -32,6 +32,7 @@
             this.btn_createRoom = new System.Windows.Forms.Button();
             this.tbx_roomName = new System.Windows.Forms.TextBox();
             this.btn_entrance = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox_roomList
@@ -70,11 +71,22 @@
             this.btn_entrance.UseVisualStyleBackColor = true;
             this.btn_entrance.Click += new System.EventHandler(this.btn_entrance_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(138, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "새로고침";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // RoomList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(259, 253);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_entrance);
             this.Controls.Add(this.tbx_roomName);
             this.Controls.Add(this.btn_createRoom);
@@ -93,5 +105,6 @@
         private Button btn_createRoom;
         private TextBox tbx_roomName;
         private Button btn_entrance;
+        private Button button1;
     }
 }

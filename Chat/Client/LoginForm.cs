@@ -31,14 +31,18 @@ public partial class LoginForm : Form
     private void LoginResponsed(object? sender, EventArgs e)
     {
         LoginResponsePacket packet = (LoginResponsePacket)sender!;
-        MessageBox.Show(packet.Code.ToString());
         if (packet.Code == 200)
         {
             Singleton.Instance.Id = tbx_id.Text;
             Singleton.Instance.Nickname = tbx_nickname.Text;
 
-            RoomList roomList = new RoomList();
-            roomList.ShowDialog();
+            IAsyncResult ar = null;
+            ar = BeginInvoke(() =>
+            {
+                RoomList roomList = new RoomList();
+                roomList.ShowDialog();
+                EndInvoke(ar);
+            });
         }
         else
         {

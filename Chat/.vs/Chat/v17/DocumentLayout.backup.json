@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A66B1F87-E982-418F-860F-24EB48AF7E19}|Client\\Client.csproj|c:\\users\\jungm\\documents\\c-socket\\chat\\client\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A66B1F87-E982-418F-860F-24EB48AF7E19}|Client\\Client.csproj|solutionrelative:client\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E90040-B1F8-44E7-A249-B1E735B8A2A8}|Server\\Server.csproj|c:\\users\\jungm\\documents\\c-socket\\chat\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E90040-B1F8-44E7-A249-B1E735B8A2A8}|Server\\Server.csproj|solutionrelative:server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{160413E9-69C1-4530-990A-D5DE3367401E}|Core\\Core.csproj|c:\\users\\jungm\\documents\\c-socket\\chat\\core\\packettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160413E9-69C1-4530-990A-D5DE3367401E}|Core\\Core.csproj|solutionrelative:core\\packettype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E90040-B1F8-44E7-A249-B1E735B8A2A8}|Server\\Server.csproj|c:\\users\\jungm\\documents\\c-socket\\chat\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E90040-B1F8-44E7-A249-B1E735B8A2A8}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A66B1F87-E982-418F-860F-24EB48AF7E19}|Client\\Client.csproj|c:\\users\\jungm\\documents\\c-socket\\chat\\client\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A66B1F87-E982-418F-860F-24EB48AF7E19}|Client\\Client.csproj|solutionrelative:client\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{160413E9-69C1-4530-990A-D5DE3367401E}|Core\\Core.csproj|c:\\users\\jungm\\documents\\c-socket\\chat\\core\\loginrequestpacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160413E9-69C1-4530-990A-D5DE3367401E}|Core\\Core.csproj|solutionrelative:core\\loginrequestpacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{160413E9-69C1-4530-990A-D5DE3367401E}|Core\\Core.csproj|c:\\users\\jungm\\documents\\c-socket\\chat\\core\\ipacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160413E9-69C1-4530-990A-D5DE3367401E}|Core\\Core.csproj|solutionrelative:core\\ipacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A66B1F87-E982-418F-860F-24EB48AF7E19}|Client\\Client.csproj|c:\\users\\jungm\\documents\\c-socket\\chat\\client\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A66B1F87-E982-418F-860F-24EB48AF7E19}|Client\\Client.csproj|solutionrelative:client\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Client\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "Client\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Client\\LoginForm.Designer.cs",
+              "RelativeToolTip": "Client\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAASwGcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T12:55:05.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T12:46:12.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PacketType.cs",
+              "DocumentMoniker": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Core\\PacketType.cs",
+              "RelativeDocumentMoniker": "Core\\PacketType.cs",
+              "ToolTip": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Core\\PacketType.cs",
+              "RelativeToolTip": "Core\\PacketType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T12:26:14.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginRequestPacket.cs",
+              "DocumentMoniker": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Core\\LoginRequestPacket.cs",
+              "RelativeDocumentMoniker": "Core\\LoginRequestPacket.cs",
+              "ToolTip": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Core\\LoginRequestPacket.cs",
+              "RelativeToolTip": "Core\\LoginRequestPacket.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T12:21:24.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPacket.cs",
+              "DocumentMoniker": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Core\\IPacket.cs",
+              "RelativeDocumentMoniker": "Core\\IPacket.cs",
+              "ToolTip": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Core\\IPacket.cs",
+              "RelativeToolTip": "Core\\IPacket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T12:20:28.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Client\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Client\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Client\\LoginForm.cs",
+              "RelativeToolTip": "Client\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T12:12:10.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Singleton.cs",
+              "DocumentMoniker": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Client\\Singleton.cs",
+              "RelativeDocumentMoniker": "Client\\Singleton.cs",
+              "ToolTip": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Client\\Singleton.cs",
+              "RelativeToolTip": "Client\\Singleton.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T14:14:21.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Server\\Server.cs",
+              "RelativeDocumentMoniker": "Server\\Server.cs",
+              "ToolTip": "C:\\Users\\jungm\\Documents\\C-Socket\\Chat\\Server\\Server.cs",
+              "RelativeToolTip": "Server\\Server.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwBsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T14:08:10.372Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

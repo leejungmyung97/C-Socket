@@ -1,4 +1,5 @@
 ﻿using Core;
+using System.Collections.Concurrent;
 using System.Net;
 using System.Net.Sockets;
 
@@ -7,6 +8,8 @@ namespace Server;
 internal class Server
 {
     private Socket serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+    public ConcurrentDictionary<string, Room> Rooms { get; } = new ConcurrentDictionary<string, Room>();
 
     public Server(string ip, int port, int backlog)
     {
@@ -29,6 +32,10 @@ internal class Server
     {
         Socket clientSocket = (Socket)sender!;
         byte[] headerBuffer = new byte[2];
+
+        string id = "";
+        string nickname = "";
+        string roomName = "";
 
         while (true)
         {
@@ -64,9 +71,36 @@ internal class Server
                 LoginRequestPacket packet = new LoginRequestPacket(dataBuffer);
                 Console.WriteLine($"id:{packet.Id} nickname:{packet.Nickname}");
 
+                id = packet.Id;
+                nickname = packet.Nickname;
                 // 200 = 응답성공
                 LoginResponsePacket packet2 = new LoginResponsePacket(200);
                 await clientSocket.SendAsync(packet2.Serialize(), SocketFlags.None);
+            }
+            else if (packetType == PacketType.CreateRoomRequest)
+            {
+                CreateRoomRequestPacket packet = new CreateRoomRequestPacket(dataBuffer);
+                Room room = new Room();
+
+                if (Rooms.TryAdd(packet.RoomName, room))
+                {
+                    roomName = packet.RoomName;
+                    room.Users.TryAdd(id, nickname);
+                    Console.WriteLine("created room : " + roomName);
+                    CreateRoomResponsePacket packet2 = new CreateRoomResponsePacket(200);
+                    await clientSocket.SendAsync(packet2.Serialize(), SocketFlags.None);
+                }
+                else
+                {
+                    Console.WriteLine("created failed");
+                    CreateRoomResponsePacket packet2 = new CreateRoomResponsePacket(500);
+                    await clientSocket.SendAsync(packet2.Serialize(), SocketFlags.None);
+                }
+            }
+            else if (packetType == PacketType.RoomListRequest)
+            {
+                RoomListResponsePacket packet = new RoomListResponsePacket(Rooms.Keys);
+                await clientSocket.SendAsync(packet.Serialize(), SocketFlags.None);
             }
         }
     }

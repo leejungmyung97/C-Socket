@@ -14,6 +14,8 @@ internal class Singleton
     public string Nickname { get; set; } = null!;
     public Socket Socket { get; } = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
     public event EventHandler<EventArgs>? LoginResponsed;
+    public event EventHandler<EventArgs>? CreateRoomResponsed;
+    public event EventHandler<EventArgs>? RoomListResponsed;
 
     private static Singleton? instance;
     public static Singleton Instance
@@ -76,6 +78,16 @@ internal class Singleton
             {
                 LoginResponsePacket packet = new LoginResponsePacket(dataBuffer);
                 LoginResponsed?.Invoke(packet, EventArgs.Empty);
+            }
+            else if (packetType == PacketType.CreateRoomResponse)
+            {
+                CreateRoomResponsePacket packet = new CreateRoomResponsePacket(dataBuffer);
+                CreateRoomResponsed?.Invoke(packet, EventArgs.Empty);
+            }
+            else if (packetType == PacketType.RoomListResponse)
+            {
+                RoomListResponsePacket packet = new RoomListResponsePacket(dataBuffer);
+                RoomListResponsed?.Invoke(packet, EventArgs.Empty);
             }
         }
     }
